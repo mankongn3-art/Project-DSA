@@ -47,8 +47,10 @@ frontend/   React + Vite
 |---|---|---|
 | (แนะนำให้ลองใส่ข้อมูลไอเท็มที่เหมาะกับฮีโร่ตัวนั้น) | รูปitemไม่แสดง | <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/bfa616cd-cab0-46bc-99af-50474f055fcf" />
  |
+ 
 | (ให้ปรับรูปฮีโร่ให้เห็นหน้าตัวละคร) | ux ยังดูธรรมดาไม่น่าดึงดูด | <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/482772dd-86c8-4cd8-b541-e9793688e415" />
  |
+ 
 | (       รูปโหลดช้า        ) | ยังไม่มีรูป EMBLEM SPELL| <img width="200" height="190" alt="image" src="https://github.com/user-attachments/assets/69d6c889-4b06-4840-9921-995b19a66e96" />
  |
 
