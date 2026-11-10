@@ -46,9 +46,12 @@ frontend/   React + Vite
 
 | ข้อแนะนำจากงานแรก | สิ่งที่แก้ในงานนี้ | หลักฐาน Before / After |
 |---|---|---|
-| (ใส่ข้อแนะนำจากอาจารย์ในงานแรก ข้อ 1) | แยก frontend เป็น React-Vite (component + hook) จาก vanilla JS ที่ใช้ `innerHTML` | Before: `app.js` ตัวเดียว / After: `frontend/src/components/*` (ใส่ภาพหน้าจอ) |
-| (ใส่ข้อแนะนำ ข้อ 2) | Express ตรวจ `sortBy`/`order` และตอบ 400 เมื่อไม่ถูกต้อง, ตอบ 502 เมื่อ API ต้นทางล่ม | Before: ค่าแปลกถูกส่งเข้า sort ตรง ๆ / After: ทดสอบ `/api/heroes?sortBy=x` ได้ 400 (ใส่ภาพหน้าจอ) |
-| (ใส่ข้อแนะนำ ข้อ 3) | UI มีสถานะ loading / error (มีปุ่มลองใหม่) / empty / success | Before: error แสดงข้อความเดียว ไม่มี retry / After: `HeroList.jsx` (ใส่ภาพหน้าจอ) |
+| (แนะนำให้ลองใส่ข้อมูลไอเท็มที่เหมาะกับฮีโร่ตัวนั้น) | รูปitemไม่แสดง | <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/bfa616cd-cab0-46bc-99af-50474f055fcf" />
+ |
+| (ให้ปรับรูปฮีโร่ให้เห็นหน้าตัวละคร) | ux ยังดูธรรมดาไม่น่าดึงดูด | <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/482772dd-86c8-4cd8-b541-e9793688e415" />
+ |
+| (รูปโหลดช้า) | ยังไม่มีรูป EMBLEM SPELL | <img width="400" height="190" alt="image" src="https://github.com/user-attachments/assets/69d6c889-4b06-4840-9921-995b19a66e96" />
+ |
 
 > เติมข้อแนะนำจริงจากงานแรก และแนบภาพ Before/After ทั้งสองเวอร์ชัน
 
@@ -83,7 +86,3 @@ App  (state: sortBy, order, q, selected; ใช้ useHeroes)
 - เหตุผลที่ไม่เลือกทางอื่น: Bubble/Insertion Sort เป็น O(n²) ช้าลงเมื่อฮีโร่เพิ่ม, Quick Sort แย่สุด O(n²) และไม่ stable
 - ก่อน–หลัง: (ใส่ผลวัดเวลาจริงของคุณเอง เช่น `console.time` เทียบกับ Bubble Sort)
 
-## หมายเหตุ
-
-- ห้าม commit `.env*` และ `.vercel` (อยู่ใน `.gitignore` แล้ว)
-- Deploy ไม่บังคับ คลิปใช้แสดงการทำงานแทน
