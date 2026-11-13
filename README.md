@@ -36,10 +36,14 @@ frontend/   React + Vite
 
 ## 7.1 ตารางส่วนร่วม
 
+<<<<<<< HEAD
 |---|---|---|---|
 | ณัฏฐกิตติ์ มั่นคง | 681310400 |
 
 
+=======
+| ณัฏฐกิตติ์ มั่นคง | 681310400 | งานเดี่ยว ทำทั้งโปรเจกต์: backend (`server.js`: route `GET /api/heroes`, `GET /api/heroes/:slug`, cache, validate), DSA (`utils/mergeSort.js`, `utils/benchmark.mjs`), frontend (`App.jsx`, `useHeroes.js`, `HeroList`, `HeroRow`, `HeroModal`, `SearchBar`, `SortBar`) | ทั้งคลิป (0:00 – จบ) |
+>>>>>>> a37495f (Add lazy image loading, benchmark script, update README tables)
 
 ## 7.2 ตารางข้อแนะนำจากงานแรก → สิ่งที่แก้
 
@@ -73,6 +77,15 @@ App  (state: sortBy, order, q, selected; ใช้ useHeroes)
 - **จัดเรียง** ด้วย Merge Sort (ดูหัวข้อถัดไป)
 
 ## DSA: Merge Sort (ฝั่ง Express)
+
+วัดด้วย `backend/utils/benchmark.mjs` (Node v22, ค่า median ของหลายรอบ, ข้อมูล winRate สุ่ม) รัน: `cd backend && node utils/benchmark.mjs`
+ 
+| จำนวนข้อมูล (n) | Merge Sort (ms) | Bubble Sort (ms) | Bubble ช้ากว่า (เท่า) |
+|---|---|---|---|
+| 130 | 0.094 | 0.047 | 0.5x |
+| 1000 | 0.268 | 1.634 | 6.1x |
+| 5000 | 2.104 | 46.618 | 22.2x |
+| 10000 | 5.489 | 195.246 | 35.6x |
 
 - ไฟล์: `backend/utils/mergeSort.js` ใช้ใน `GET /api/heroes` (`server.js`)
 - ทำไมทำฝั่ง Express: จัดเรียงครั้งเดียวก่อนส่ง React ได้ลำดับที่ตรงกันทุกเครื่อง และ React ไม่ต้องคำนวณซ้ำ
